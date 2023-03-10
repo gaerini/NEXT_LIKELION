@@ -1,0 +1,86 @@
+.viewport {
+    width:370px;
+    background-color: black;
+}
+
+.idBar{
+    height: 44px;
+    display: flex;
+    padding: 0px 16px;
+    align-items: center;
+}
+
+.ArrowBtn {
+    margin-top: 0.5vh
+}
+
+.id {
+    color: #FAFAFA;
+    margin: 0px auto;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.greyLine {
+    height: 1px;
+    background-color: #363636;
+}
+
+.profile {
+    display:flex;
+    padding: 16px 16px 24px;
+}
+
+.profileImg {
+    width: 91px;
+    height: 91px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.profileImg img {
+    width: 77px;
+    height: 77px;
+    border-radius: 70%;
+    margin-right:28px;
+}
+
+.profileBox {
+    width:233px;
+    height:92px;
+
+}
+
+.profileId {
+    height: 48px;;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.profileBoxId {
+    font-size: 20px;
+    color: #FAFAFA;
+}
+
+.influencerMark {
+    display: flex;
+    align-items: center;
+}
+
+.influencerMark img {
+    width: 18px;
+    height: auto;
+    margin-left: 8px;
+}
+
+.menuDots svg {
+    width: 28px;
+    height: auto;
+    margin-left: 8px;
+    position: relative;
+    top: 2px;
+}
