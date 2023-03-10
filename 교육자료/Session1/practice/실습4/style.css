@@ -1,0 +1,20 @@
+.box {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #6e6ed3;
+}
+
+.container {
+  display: flex;
+  height: 100px;
+}
+
+.container1 {
+  display:flex;
+}
+
+.container2 {
+  display: flex;
+  align-items: flex-end;
+}

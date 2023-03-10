@@ -1,0 +1,64 @@
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: beige;
+}
+
+h1 {
+    
+    font-weight: 800;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+#MyPic {
+    margin: 0 auto;
+}
+
+#MyPic img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+#profile ul{
+    width:400px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#profile ul li {
+    
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#blank1 {
+    height: 100px;
+}
+
+.ProudPic{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ProudPicFlex {
+    width: 1000px;  
+    display: flex;
+    justify-content: space-between;
+}
+
+.item img{
+    width:300px;
+    height:auto;
+    border-radius: 20px;
+}
+
+.item p{
+    display: flex;
+    flex-direction: column;
+}
