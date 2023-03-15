@@ -1,17 +1,34 @@
+body {
+    margin: 0;
+    background-color:black;
+}
+
 .viewport {
-    width:370px;
+    max-width: 370px;
+    margin: 0 auto;
+    height: calc(100vh - 44px);
     background-color: black;
+    overflow-y: auto;
 }
 
 .idBar{
+    background-color: black;
+    width: 370px;
+    margin: 0 auto;
     height: 44px;
     display: flex;
     padding: 0px 16px;
+    box-sizing: border-box;
     align-items: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #363636;
+    z-index: 5;
 }
 
 .ArrowBtn {
-    margin-top: 0.5vh
+    margin-top: 0.5vh;
+    
 }
 
 .id {
@@ -19,6 +36,7 @@
     margin: 0px auto;
     font-size: 1rem;
     font-weight: 800;
+   
 }
 
 .greyLine {
@@ -28,9 +46,12 @@
 
 .profile {
     display:flex;
-    padding: 16px 16px 24px;
+    padding: 50px 16px 24px;
 }
 
+.profileArea {
+    overflow: scroll;
+}
 .profileImg {
     width: 91px;
     height: 91px;
@@ -84,3 +105,186 @@
     position: relative;
     top: 2px;
 }
+
+.emptyBox {
+    height: 12px;
+}
+
+.friends {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.follow {
+    padding: 7px 16px;
+    background-color: #4193EF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.friendsAdd {
+    
+    background-color: #EFEFEF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 32px;
+    box-sizing: border-box;
+}
+
+.comment {
+    padding: 0px 16px 21px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comment .commentBlock div{
+    color: white;
+    font-size: 14px;
+}
+
+.comment .commentBlock span {
+    color: #E0F1FF;
+    font-weight: bold;
+}
+
+.myFriends {
+    color: #A8A8A8;
+    font-size: 12px;
+}
+
+.myFriends .friendsName {
+    color: white;
+}
+
+.story {
+    
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.story .storyGroup {
+    width: 65px;
+    margin: 0px 5px 0px 5px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.thumbNail {
+    height: 64px;
+    width: 64px;
+    border: 1px solid hsl(0, 0%, 18%);
+    border-radius: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.storyTitle {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px 0px 0px;
+    margin-bottom: 21px;
+}
+
+.thumbNail img {
+    width: 56px;
+    height: 56px;
+    border-radius: 70%;
+}
+
+.data {
+    display: flex;
+    padding: 12px 0;
+    
+}
+
+.Num {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+    width: 123.2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Num span {
+    color: #A8A8A8;
+    font-weight: normal;
+}
+
+.menuBar {
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuBar div {
+    width: 92.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postingRow {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0px 0px 3px;
+    justify-content: space-between;
+}
+
+.posting {
+    position: relative;
+    width: 121.34px;
+    height: 121.34px;
+    overflow: hidden;
+}
+
+.posting img {
+    width: 121.34px;
+    height: auto;
+    position: absolute;
+}
+
+.userNav {
+    width: 370px;
+    height: 49px;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iconMenu {
+    width: 24px;
+    height: 24px;
+}
+
+.iconMenu img {
+    width: 24px;
+    height: 24px;
+    border-radius: 70%;
+}
+
