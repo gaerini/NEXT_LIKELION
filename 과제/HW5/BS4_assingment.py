@@ -20,4 +20,3 @@ container = {'name': li_name_cleaned, 'time': li_time_cleaned, 'comments': li_co
 print(container)
 
 df_table = pd.DataFrame(container)
-df_table
