@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'projectStyle.css'%}">
+</head>
+<body>
+    <div class="profile_navbar">
+        <a href="http://127.0.0.1:8000/info">INFO</a>
+        <a href="http://127.0.0.1:8000/project">PROJECT</a>
+        <a href="http://127.0.0.1:8000/blog">BLOG</a>        
+    </div>
+    <div class = "orangeLine"></div>
+    <div class="profile">
+        <div class="profile_text_col">
+            <div class = "profileText">
+                <div><span id="titleDot">.</span><span class="titleAbout">about me</span></div>
+                <div><span id="titleDollar">$</span>1998.03.06</div>
+                <div><span id="titleDollar">$</span>논산대건고등학교 졸업</div>
+                <div><span id="titleDollar">$</span>2018~2022 고려대학교 기계공학부 입학</div>
+                <div><span id="titleDollar">$</span>2022~ 고려대학교 전기전자공학부 재학 중</div>
+            </div>
+            <div class = "profileText">
+                <div><span id="titleDot">.</span><span class="titleAbout">career</span></div>
+                <div><span id="titleDollar">$</span>독립리서치 밸류파인더 인턴</div>
+                <div><span id="titleDollar">$</span>SKT FLY-AI 수료</div>
+                <div><span id="titleDollar">$</span>NEXT 11기</div>
+            </div>
+        </div>
+        <div class="profileImg">
+            <img src="{%static './img/profile_img/profile_face.jpeg'%}">
+        </div>
+        
+    </div>
+ 
+    
+    
+</body>
+</html>

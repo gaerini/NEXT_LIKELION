@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+}
+
+.profile_navbar {
+    width: 370px;
+    height: 40px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile_navbar a {
+    color: white;
+    z-index: 6;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.orangeLine {
+    width: 100vw;
+    height: 20px;
+    border-top: 1px solid orange;
+}
+
+.profile {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.profileText {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-around;
+    margin-right: 5vw;
+}
+
+
+.profileText span{
+    font-size: 40px;
+    color: white;
+    
+}
+
+#titleDot {
+    font-size: 60px;
+    color: orange;
+}
+
+.profileText div {
+    color: white;
+    font-size: 16px;
+}   
+
+
+.profileImg img {
+    border-radius: 10px;
+    height: 60vh;
+}
+
+#titleDollar {
+    font-size: 20px;
+    color: orange;
+}
+
+
+
