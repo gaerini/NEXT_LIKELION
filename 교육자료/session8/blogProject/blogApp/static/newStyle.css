@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    padding: 0 10vw;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    margin: 50px 0px 10px 0px;
+}
+
+form {
+    border: 1px solid white;
+    padding: 5vw;
+}
+
+.inputContainer {
+    margin-bottom: 3vh;
+}
+
+.inputTitle {
+    color: white;
+}
+
+.smallBox {
+    background: black;
+    border: 1px solid grey;
+    color: grey;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+}
