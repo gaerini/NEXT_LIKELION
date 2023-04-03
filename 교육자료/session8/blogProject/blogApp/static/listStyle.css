@@ -48,7 +48,6 @@ h2 {
     outline: none;
 }
 .categoryItem div {
-    font: 15px;
     color: black;
 }
 
@@ -56,6 +55,9 @@ h2 {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .imgShow img {
     height: 100%;
