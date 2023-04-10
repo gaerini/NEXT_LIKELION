@@ -1,0 +1,64 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    padding: 0px 33vw;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.view {
+    margin: 0 auto;
+    width: 33vw;
+}
+
+.listContainer {
+    display: flex;
+    margin: 0 auto;
+    width: 50vw;
+    height: 90vh;
+    padding: 14px;
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+.listBox {
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.listContentBox {
+    width: 100%;
+    border-top: 1px solid white;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 2px;
+    box-sizing: border-box;
+}
+
+.listContentBox div a {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    font-size: 20pz;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.content{
+    font-size: 12px;
+}
+
+.meta {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Done {
+    margin-right: 10px;
+}
