@@ -9,3 +9,17 @@ class Article(models.Model):
 
     def  __str__(self):
         return self.title
+    
+class Comment(models.Model):
+    post = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='comments')
+    content = models.TextField()
+
+    def __str__(self):
+        return self.content
+    
+class Re_comment(models.Model):
+    comment = models.ForeignKey(Comment, on_delete=models.CASCADE, related_name='re_comments')
+    content = models.TextField()
+
+    def __str__(self):
+        return self.content

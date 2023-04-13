@@ -1,19 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>detail</title>
-    {%load static%}
-    <link rel="stylesheet" href="{%static 'detailStyle.css'%}"/>
-</head>
-<body>
-    <h2>#{{article_detail.id}} {{article_detail.title}}</h2>
-    <div class="content">
-        {{article_detail.content}}
-    </div>
-    <div class="writtenDt">{{created_dt}}</div>
-    <div class='returnList'><a href="{%url 'list'%}">👉 list페이지로 가기</a></div>
-</body>
-</html>
+{%extends 'base.html'%}
+{%block css%}
+{%load static%}
+<link rel="stylesheet" href="{%static 'detailStyle.css'%}"/>
+{%endblock css%}
+
+{%block container%}
+<h2>#{{article_detail.id}} {{article_detail.title}}</h2>
+<div class="content">
+    {{article_detail.content}}
+</div>
+<div class="writtenDt">{{created_dt}}</div>
+<div class='returnList'><a href="{%url 'list'%}">👉 list페이지로 가기</a></div>
+<div class="comment">
+    {%for comment in article_detail.comments.all %}
+    <div class="commentLog">{{comment.content}}</div>
+        <div class="recomment">
+            {%for comment in comment.re_comments.all %}
+            <div class="recommentLog">ㄴ{{comment.content}}</div>
+            {%endfor%}
+            <form method="POST">
+                {%csrf_token%}
+                <div class="recommentInput">
+                    <input type="text" name="recomment" placeholder="대댓글을 입력해주세요"/>
+                    <button type="submit">대댓글 작성하기</button>
+                </div>
+            </form>
+        </div>
+    {%endfor%}
+    <form method="POST">
+        {%csrf_token%}
+        <div class="commentInput">
+            <input type="text" name="content" placeholder="댓글을 입력해주세요">
+            <button type="submit">작성하기</button> 
+        </div>
+    </form>
+    
+</div>
+{%endblock container%}

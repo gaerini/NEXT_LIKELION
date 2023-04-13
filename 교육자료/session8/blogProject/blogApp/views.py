@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Article
+from .models import Article, Comment, Re_comment
 from django.utils import timezone
 # Create your views here.
 def new(request):
@@ -32,7 +32,30 @@ def detail(request, article_id):
     article_detail = Article.objects.get(id = article_id)
     created_dt = article_detail.dt
 
+    if request.method == 'POST':
+        pk_list = []
+        for i in Comment.objects.all():
+            pk_list.append(i.pk)
+        comment_id = max(pk_list)
+
+        if 'content' in request.POST:
+            Comment.objects.create(
+                post = article_detail,
+                content = request.POST['content'],
+            )
+
+        
+        elif 'recomment' in request.POST:
+            Re_comment.objects.create(
+                comment = Comment.objects.get(id = comment_id),
+                content = request.POST['recomment'],
+            )
+        
+        return redirect('detail', article_id)
+    
+    
     return render(request, 'detail.html', {'article_detail': article_detail, 'created_dt':created_dt})
+
 
 def category(request, category_kind):
     category_kind_templates = category_kind

@@ -35,3 +35,41 @@ h2 {
     text-decoration: none;
     color: white;
 }
+
+.comment {
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.commentInput {
+    color:white;
+    display: flex;
+    justify-content: end;
+}
+
+.commentLog {
+    color:white;
+    margin-bottom: 5px;
+}
+
+.recommentLog {
+    color: gray;
+}
+
+.recommentInput {
+    margin-bottom: 10px;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 8px;
+    margin-right: 5px;
+    color: white
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
