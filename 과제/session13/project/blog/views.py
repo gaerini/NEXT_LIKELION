@@ -1,0 +1,32 @@
+from django.shortcuts import render, redirect
+from .models import Post
+# Create your views here.
+
+def home(request):
+    posts = Post.objects.all()
+
+    return render(request, 'home.html', {'posts':posts})
+
+def detail(request, post_pk):
+    post = Post.objects.get(pk=post_pk)
+    return render(request, 'detail.html', {'post':post})
+
+def new(request):
+    if request.method == 'POST':
+        new_post = Post.objects.create(
+            title = request.POST['title'],
+            content = request.POST['posting'],
+        )
+        redirect ('detail', new_post.pk)
+    
+    return render(request, 'new.html')
+
+def update(request, post_pk):
+     post = Post.object.get(pk=post_pk)
+
+     if request.method == 'POST':
+         Post.objects.filter(pk=post_pk).update(
+             title = request.POST['title'],
+             content = request.POST['posting'],
+         )
+         redirect ('detail', post_pk)

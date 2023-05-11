@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="base.css"/>
+{% endblock %}
+
+{% block container%}
+<div class = "postList">
+    <ul>
+        {% for post in posts%}
+        <li>{{post.title}}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block css %}
+
+{% endblock %}
+
+{%block container%}
+<div class="inputForm">
+    <form method="post" action = "">
+        <div class="titleInput">
+            <input type='text' id = 'title' name = 'title' placeholder = "제목을 입력하세요.">
+        </div>
+        <div class="postingInput">
+            <textarea id = 'posting' name = 'posting' cols = '30' rows = '10' placeholder="내용을 입력해주세요"></textarea>
+        </div>
+        <button type = "subit">작성하기</button>
+    </form>
+</div>
+{%endblock%}

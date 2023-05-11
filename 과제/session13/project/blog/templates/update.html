@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block css %}
+
+{% endblock %}
+
+{%block container%}
+<div class="inputForm">
+    <div class="title">
+        {{post.title}}
+    </div>
+    <div class="posting">
+        {{post.content}}
+    </div>
+    <button type = "subit">작성하기</button>
+</div>
+{%endblock%}
